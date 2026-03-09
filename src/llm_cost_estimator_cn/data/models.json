@@ -1,0 +1,58 @@
+{
+  "deepseek-chat": {
+    "provider": "DeepSeek",
+    "name": "DeepSeek Chat",
+    "input_price_per_1k": 0.001,
+    "output_price_per_1k": 0.002,
+    "currency": "CNY",
+    "notes": "性价比之王"
+  },
+  "ernie-4.0": {
+    "provider": "百度",
+    "name": "文心一言 4.0",
+    "input_price_per_1k": 0.12,
+    "output_price_per_1k": 0.12,
+    "currency": "CNY",
+    "notes": "百度旗舰模型"
+  },
+  "qwen-turbo": {
+    "provider": "阿里云",
+    "name": "通义千问 Turbo",
+    "input_price_per_1k": 0.008,
+    "output_price_per_1k": 0.008,
+    "currency": "CNY",
+    "notes": "高性价比选择"
+  },
+  "qwen-plus": {
+    "provider": "阿里云",
+    "name": "通义千问 Plus",
+    "input_price_per_1k": 0.04,
+    "output_price_per_1k": 0.04,
+    "currency": "CNY",
+    "notes": "平衡性能与成本"
+  },
+  "glm-4": {
+    "provider": "智谱AI",
+    "name": "GLM-4",
+    "input_price_per_1k": 0.1,
+    "output_price_per_1k": 0.1,
+    "currency": "CNY",
+    "notes": "智谱旗舰模型"
+  },
+  "baichuan2-turbo": {
+    "provider": "百川智能",
+    "name": "百川2-Turbo",
+    "input_price_per_1k": 0.008,
+    "output_price_per_1k": 0.008,
+    "currency": "CNY",
+    "notes": "快速响应"
+  },
+  "moonshot-v1-8k": {
+    "provider": "月之暗面",
+    "name": "Kimi Chat 8K",
+    "input_price_per_1k": 0.012,
+    "output_price_per_1k": 0.012,
+    "currency": "CNY",
+    "notes": "长文本处理"
+  }
+}

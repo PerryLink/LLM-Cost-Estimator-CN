@@ -29,8 +29,18 @@
 
 ## 快速开始
 
+从 PyPI 安装：
+
 ```bash
 pip install llm-cost-estimator-cn
+```
+
+从源码安装：
+
+```bash
+git clone https://github.com/PerryLink/llm-cost-estimator-cn.git
+cd llm-cost-estimator-cn
+pip install -e .
 ```
 
 ## 使用方法
@@ -63,12 +73,46 @@ llm-cost-estimator-cn -i 1000000 -o 100000 --top 5
 | `baichuan2-turbo` | 百川智能 | ¥0.008 | ¥0.008 |
 | `moonshot-v1-8k` | 月之暗面 | ¥0.012 | ¥0.012 |
 
+## 项目结构
+
+```
+llm-cost-estimator-cn/
+├── src/llm_cost_estimator_cn/
+│   ├── __init__.py          # 包入口，版本号
+│   ├── __main__.py          # 支持 python -m 运行
+│   ├── cli.py               # Click CLI 定义
+│   ├── core.py              # 成本计算核心逻辑
+│   ├── utils.py             # 辅助工具函数
+│   └── data/models.json     # 模型定价数据
+├── tests/test_core.py       # 单元测试
+├── pyproject.toml           # 构建配置（setuptools）
+├── LICENSE
+├── CONTRIBUTING.md
+└── README.md
+```
+
+## 技术栈
+
+| 组件 | 库 |
+|------|----|
+| CLI 框架 | [Click](https://click.palletsprojects.com/) |
+| 终端 UI | [Rich](https://github.com/Textualize/rich) |
+| 构建系统 | [setuptools](https://setuptools.pypa.io/) |
+| 测试 | [pytest](https://pytest.org/) |
+| 代码检查 | [Ruff](https://github.com/astral-sh/ruff) |
+| 代码格式化 | [Black](https://github.com/psf/black) |
+
 ## 开发
 
 ```bash
 pip install -e ".[dev]"
 pytest
 ```
+
+## 相关项目
+
+- [dsh-budget](https://github.com/PerryLink/dsh-budget) — 本项目被移植进的 DSH 插件
+- [PerryLink](https://github.com/PerryLink) — PerryLink DSH 插件家族
 
 ## 许可证
 

@@ -30,8 +30,18 @@ models by total cost, showing the percentage difference from the cheapest option
 
 ## Quick start
 
+From PyPI:
+
 ```bash
 pip install llm-cost-estimator-cn
+```
+
+From source:
+
+```bash
+git clone https://github.com/PerryLink/llm-cost-estimator-cn.git
+cd llm-cost-estimator-cn
+pip install -e .
 ```
 
 ## Usage
@@ -64,12 +74,46 @@ Prices are in CNY per 1K tokens.
 | `baichuan2-turbo` | 百川智能 | ¥0.008 | ¥0.008 |
 | `moonshot-v1-8k` | 月之暗面 | ¥0.012 | ¥0.012 |
 
+## Project structure
+
+```
+llm-cost-estimator-cn/
+├── src/llm_cost_estimator_cn/
+│   ├── __init__.py          # Package entry, version
+│   ├── __main__.py          # python -m support
+│   ├── cli.py               # Click CLI definition
+│   ├── core.py              # Cost calculation logic
+│   ├── utils.py             # Helper utilities
+│   └── data/models.json     # Model pricing data
+├── tests/test_core.py       # Unit tests
+├── pyproject.toml           # Build configuration (setuptools)
+├── LICENSE
+├── CONTRIBUTING.md
+└── README.md
+```
+
+## Tech stack
+
+| Component | Library |
+|-----------|---------|
+| CLI framework | [Click](https://click.palletsprojects.com/) |
+| Terminal UI | [Rich](https://github.com/Textualize/rich) |
+| Build system | [setuptools](https://setuptools.pypa.io/) |
+| Testing | [pytest](https://pytest.org/) |
+| Linting | [Ruff](https://github.com/astral-sh/ruff) |
+| Formatting | [Black](https://github.com/psf/black) |
+
 ## Development
 
 ```bash
 pip install -e ".[dev]"
 pytest
 ```
+
+## Related
+
+- [dsh-budget](https://github.com/PerryLink/dsh-budget) — the DSH plugin this project was ported into
+- [PerryLink](https://github.com/PerryLink) — the PerryLink DSH Plugin Family
 
 ## License
 

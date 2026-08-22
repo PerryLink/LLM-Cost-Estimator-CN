@@ -1,6 +1,7 @@
 <div align="center">
 
 # LLM-Cost-Estimator-CN
+[![Gitee](https://img.shields.io/badge/Gitee-mirror-c71d23?logo=gitee)](https://gitee.com/perrylink/llm-cost-estimator-cn)
 
 **A CLI tool for estimating and comparing API costs of mainstream Chinese LLM models.**
 

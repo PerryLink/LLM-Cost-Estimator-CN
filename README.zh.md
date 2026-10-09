@@ -32,7 +32,8 @@
 从 PyPI 安装：
 
 ```bash
-pip install llm-cost-estimator-cn
+pip install "git+https://github.com/PerryLink/LLM-Cost-Estimator-CN.git"
+# （PyPI 未发布，源码直装）
 ```
 
 从源码安装：

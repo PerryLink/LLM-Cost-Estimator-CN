@@ -34,7 +34,8 @@ models by total cost, showing the percentage difference from the cheapest option
 From PyPI:
 
 ```bash
-pip install llm-cost-estimator-cn
+pip install "git+https://github.com/PerryLink/LLM-Cost-Estimator-CN.git"
+# (installs from source; not yet on PyPI)
 ```
 
 From source:
